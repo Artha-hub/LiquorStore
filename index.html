@@ -55,12 +55,29 @@
             overflow: hidden;
         }
 
+
         .hero {
-            background: url('images/HTmain.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 100px 0;
-            text-align: center;
-        }
+    display: flex;                /* Enables flexbox layout */
+    align-items: center;          /* Vertically centers the items */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 20px;                /* Adds padding around the section */
+}
+
+.hero-content {
+    flex: 1;                      /* Allows content to take available space */
+}
+
+.hero-image {
+    flex: 1;                      /* Allows image container to take available space */
+    display: flex;
+    justify-content: flex-start;  /* Aligns image to the left */
+}
+
+.hero-image img {
+    max-width: 100%;              /* Ensures image scales with container */
+    height: auto;                 /* Maintains aspect ratio */
+    border-radius: 8px;           /* Optional: Adds rounded corners */
+}
 
         .store-info {
             background-color: #fff;
@@ -185,27 +202,33 @@
     </header>
 
     <section id="home">
-        <div class="hero">
+    <div class="hero">
+        <div class="hero-content">
             <h2>Welcome to Happy Town Liquor</h2>
             <p>Your Neighborhood Destination for Premium Liquor!</p>
-            <div class="store-info">
-                <p><strong>Address:</strong> 1552 FM 685 #105, Pflugerville, TX 78660</p>
-                <p><strong>Phone:</strong> (512) 305-3296</p>
-                <p><strong>Hours:</strong> Monday-Saturday 10AM-9PM</p>
-            </div>
-            <div class="map">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.285367794798!2d-97.62327798421818!3d30.470516781782855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b94e22c666333%3A0x6b6094238b7e95d6!2s1552%20FM%20685%20%23105%2C%20Pflugerville%2C%20TX%2078660!5e0!3m2!1sen!2sus!4v1693945044410!5m2!1sen!2sus" 
-        width="400" 
-        height="300" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
         </div>
-    </section>
+        <div class="hero-image">
+            <img src="images/HTmain.jpg" alt="Happy Town Liquor Store" />
+        </div>
+        <div class="store-info">
+            <p><strong>Address:</strong> 1552 FM 685 #105, Pflugerville, TX 78660</p>
+            <p><strong>Phone:</strong> (512) 305-3296</p>
+            <p><strong>Hours:</strong> Monday-Saturday 10AM-9PM</p>
+        </div>
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.285367794798!2d-97.62327798421818!3d30.470516781782855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b94e22c666333%3A0x6b6094238b7e95d6!2s1552%20FM%20685%20%23105%2C%20Pflugerville%2C%20TX%2078660!5e0!3m2!1sen!2sus!4v1693945044410!5m2!1sen!2sus" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
 
     <section id="about">
         <div class="container">
