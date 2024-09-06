@@ -145,12 +145,15 @@
             background-color: #c0392b;
         }
 
-        .product-category img {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
 
+        .product-category img {
+    max-width: 100%;  /* Ensures the image scales down responsively */
+    height: auto;     /* Keeps the aspect ratio intact */
+    display: block;   /* Makes sure the image is treated as a block-level element */
+    margin: 0 auto;   /* Centers the image */
+    object-fit: cover;  /* Makes sure the image fits the container without stretching */
+    border-radius: 8px; /* Adds some nice rounding to the corners */
+}
         .product-category {
             margin-bottom: 30px;
         }
