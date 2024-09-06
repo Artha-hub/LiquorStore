@@ -57,20 +57,20 @@
 
 
         .hero {
-    display: flex;                /* Enables flexbox layout */
-    align-items: center;          /* Vertically centers the items */
-    justify-content: space-between; /* Distributes space between items */
+    text-align: center;            /* Centers text and image */
     padding: 20px;                /* Adds padding around the section */
 }
 
-.hero-content {
-    flex: 1;                      /* Allows content to take available space */
+.hero h2 {
+    margin-bottom: 10px;          /* Space between heading and paragraph */
+}
+
+.hero p {
+    margin-bottom: 20px;          /* Space between paragraph and image */
 }
 
 .hero-image {
-    flex: 1;                      /* Allows image container to take available space */
-    display: flex;
-    justify-content: flex-start;  /* Aligns image to the left */
+    margin-bottom: 20px;          /* Space between image and store info */
 }
 
 .hero-image img {
@@ -79,13 +79,16 @@
     border-radius: 8px;           /* Optional: Adds rounded corners */
 }
 
-        .store-info {
-            background-color: #fff;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+.store-info {
+    background-color: #fff;
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Space between store info and map */
+}
+
+.map {
+    margin: 0 auto;               /* Centers the map */
+}
+
 
         .map iframe {
             width: 100%;
@@ -201,14 +204,13 @@
         </div>
     </header>
 
-    <section id="home">
+    
+<section id="home">
     <div class="hero">
-        <div class="hero-content">
-            <h2>Welcome to Happy Town Liquor</h2>
-            <p>Your Neighborhood Destination for Premium Liquor!</p>
-        </div>
+        <h2>Welcome to Happy Town Liquor</h2>
+        <p>Your Neighborhood Destination for Premium Liquor!</p>
         <div class="hero-image">
-            <img src="images/HTmain.jpg" alt="Happy Town Liquor Store" />
+            <img src="images/liquorstore.jpg" alt="Happy Town Liquor Store" />
         </div>
         <div class="store-info">
             <p><strong>Address:</strong> 1552 FM 685 #105, Pflugerville, TX 78660</p>
@@ -228,6 +230,7 @@
         </div>
     </div>
 </section>
+
 
 
     <section id="about">
