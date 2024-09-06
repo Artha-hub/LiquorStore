@@ -1,16 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="css/styles.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover Happy Town Liquor in Pflugerville, TX for a wide selection of Scotch, Whiskey, Rum, and Beer. Enjoy premium products, cocktail recipes, and exceptional customer service.">
     <meta name="keywords" content="Liquor Store Pflugerville, Scotch Whiskey Pflugerville, Best Rum and Beer Pflugerville, Cocktail Recipes, Buy Alcohol Online, Happy Town Liquor">
-    <meta name="geo.position" content="[Insert Latitude];[Insert Longitude]">
+    <meta name="geo.position" content="30.470516;-97.623277">
     <meta name="geo.placename" content="Pflugerville, TX">
     <meta name="geo.region" content="US-TX">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
     <title>Happy Town Liquor</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .hero {
+            background: url('your-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .store-info {
+            background-color: #fff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -39,8 +169,7 @@
                 <p><strong>Hours:</strong> Monday-Saturday 10AM-9PM</p>
             </div>
             <div class="map">
-                <!-- Embed Google Map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.285367794798!2d-97.62327798421818!3d30.470516781782855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b94e22c666333%3A0x6b6094238b7e95d6!2s1552%20FM%20685%20%23105%2C%20Pflugerville%2C%20TX%2078660!5e0!3m2!1sen!2sus!4v1637286377283!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.285367794798!2d-97.62327798421818!3d30.470516781782855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b94e22c666333%3A0x6b6094238b7e95d6!2s1552%20FM%20685%20%23105%2C%20Pflugerville%2C%20TX%2078660!5e0!3m2!1sen!2sus!4v1637286377283!5m2!1sen!2sus" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -48,79 +177,7 @@
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>At Happy Town Liquor, we pride ourselves on offering a vast selection of the finest spirits and beers. Our knowledgeable staff is dedicated to providing you with exceptional customer service and helping you find the perfect drink for any occasion. Whether you’re a connoisseur or a casual enthusiast, we have something for everyone.</p>
-        </div>
-    </section>
-
-    <section id="products">
-        <div class="container">
-            <h2>Featured Products</h2>
-            <div class="product-category">
-                <h3>Scotch</h3>
-                <p>Discover our range of premium Scotch whiskies, including Glenfiddich, Macallan, and Glenlivet. Perfect for connoisseurs and casual drinkers alike.</p>
-            </div>
-            <div class="product-category">
-                <h3>Whiskey</h3>
-                <p>From classic Bourbon to Rye, explore top brands like Jack Daniel's, Maker's Mark, and Buffalo Trace.</p>
-            </div>
-            <div class="product-category">
-                <h3>Rum</h3>
-                <p>Enjoy our selection of fine rums, including Captain Morgan, Bacardi, and Mount Gay.</p>
-            </div>
-            <div class="product-category">
-                <h3>Beer</h3>
-                <p>A wide assortment of craft and domestic beers including IPA, Lager, and Stout. Brands like Budweiser, Shiner Bock, and local brews.</p>
-            </div>
-            <div class="product-category">
-                <h3>Top Alcohol Products</h3>
-                <p>Explore our curated selection of the best liquors and spirits available.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="recipes">
-        <div class="container">
-            <h2>Cocktail Recipes</h2>
-            <div class="recipe">
-                <h3>Classic Margarita</h3>
-                <p><strong>Ingredients:</strong> 2 oz Tequila, 1 oz Lime juice, 1 oz Triple sec, Salt for rim</p>
-                <p><strong>Instructions:</strong> Rim the glass with salt. Shake the ingredients with ice and strain into the glass.</p>
-            </div>
-            <div class="recipe">
-                <h3>Old Fashioned</h3>
-                <p><strong>Ingredients:</strong> 2 oz Bourbon, 1 sugar cube, 2 dashes Angostura bitters, Orange twist</p>
-                <p><strong>Instructions:</strong> Muddle the sugar and bitters in a glass. Add bourbon and ice, stir, and garnish with an orange twist.</p>
-            </div>
-            <div class="recipe">
-                <h3>Mojito</h3>
-                <p><strong>Ingredients:</strong> 2 oz Rum, 1 oz Lime juice, 2 tsp Sugar, Mint leaves, Soda water</p>
-                <p><strong>Instructions:</strong> Muddle mint and sugar in a glass. Add lime juice and rum, then fill with ice. Top with soda water.</p>
-            </div>
-            <div class="recipe">
-                <h3>Manhattan</h3>
-                <p><strong>Ingredients:</strong> 2 oz Rye whiskey, 1 oz Sweet vermouth, 2 dashes Angostura bitters, Maraschino cherry</p>
-                <p><strong>Instructions:</strong> Stir ingredients with ice and strain into a chilled glass. Garnish with a cherry.</p>
-            </div>
-            <div class="recipe">
-                <h3>Moscow Mule</h3>
-                <p><strong>Ingredients:</strong> 2 oz Vodka, 1 oz Lime juice, 4 oz Ginger beer, Lime wedge</p>
-                <p><strong>Instructions:</strong> Combine vodka and lime juice in a mug filled with ice. Top with ginger beer and garnish with a lime wedge.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial">
-                <p>“Happy Town Liquor has the best selection in Pflugerville! The staff is always helpful and friendly.” – Alex T.</p>
-            </div>
-            <div class="testimonial">
-                <p>“I love their collection of Scotch. Great prices and excellent service.” – Jessica M.</p>
-            </div>
-            <div class="testimonial">
-                <p>“The beer selection is top-notch. I always find something new to try.” – Chris P.</p>
-            </div>
+            <p>At Happy Town Liquor, we pride ourselves on offering a vast selection of the finest spirits and beers. Our knowledgeable staff is dedicated to providing you with exceptional customer service and helping you find the perfect drink for any occasion.</p>
         </div>
     </section>
 
@@ -140,10 +197,13 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
+                <!-- Hidden input field for basic security -->
+                <input type="hidden" name="token" value="secure_token_here">
+
                 <button type="submit">Send Message</button>
             </form>
             <p><strong>Phone:</strong> (512) 305-3296</p>
-            <p><strong>Email:</strong> [Insert Email Address]</p>
+            <p><strong>Email:</strong> info@happytownliquor.com</p>
         </div>
     </section>
 
@@ -156,8 +216,7 @@
                 <li><a href="#sitemap">Sitemap</a></li>
             </ul>
             <div class="social-media">
-                <!-- Add social media links here -->
-                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+                <a href="https://facebook.com">Facebook</a> | <a href="https://instagram.com">Instagram</a> | <a href="https://twitter.com">Twitter</a>
             </div>
         </div>
     </footer>
